@@ -100,7 +100,11 @@ namespace Gender
                     isBadAtCS = value;
                 }
             }
+            public override string ToString()
+            {
+                return ("wow i am a "+ (isMale ? "male" : "female") + " person of age "+age+". I identify as "+name+". I make $"+income+" a year and am "+(isBadAtCS?"bad at Computer Science":"not bad at Computer Science")+".");
 
+            }
         }
         class Student : Person
         {
@@ -146,6 +150,11 @@ namespace Gender
             {
                 gpa = _gpa;
                 favoriteSubject = _favoriteSubject;
+            }
+            public override string ToString()
+            {
+                return ("wow i am a " + (IsMale ? "male" : "female") + " person of age " + Age + ". I identify as " + Name + ". I make $" + Income + " a year and am " + (IsBadAtCS ? "bad at Computer Science" : "not bad at Computer Science") + ". I have a GPA of "+gpa+" and my favorite subject is"+favoriteSubject+".");
+
             }
         }
         class Employee :Person
@@ -195,6 +204,11 @@ namespace Gender
                 salary = _salary;
                 position = _position;
             }
+            public override string ToString()
+            {
+                return ("wow i am a " + (IsMale ? "male" : "female") + " person of age " + Age + ". I identify as " + Name + ". I make $" + Income + " a year and am " + (IsBadAtCS ? "bad at Computer Science" : "not bad at Computer Science") + ". I have a salary of " + salary + " and my job position is" + position + ".");
+
+            }
         }
         static void Main(string[] args)
         {
@@ -212,6 +226,9 @@ namespace Gender
             poor_dude.Age = -1;
             poor_dude.FavoriteSubject = "Biology";
             poor_dude.Name = "1235453";
+            Console.WriteLine(dude_man.ToString());
+            Console.WriteLine(poor_dude.ToString());
+            Console.WriteLine(richard.ToString());
         }
     }
 }
