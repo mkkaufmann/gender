@@ -100,6 +100,7 @@ namespace Gender
                     isBadAtCS = value;
                 }
             }
+
         }
         class Student : Person
         {
@@ -208,6 +209,9 @@ namespace Gender
             Employee dis_wamen = new Employee(false, "dis wamen", 35, 70000, true, 70000, "Head of Diversity");
             Employee richard = new Employee(true, "richard", 67, 30000, true, 30000, "Sir Richard, Butler of Huthering Weights");
 
+            poor_dude.Age = -1;
+            poor_dude.FavoriteSubject = "Biology";
+            poor_dude.Name = "1235453";
         }
     }
 }
