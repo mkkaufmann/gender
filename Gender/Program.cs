@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/* 
+ * Michael Kaufmann
+ * 1/19/18
+ * Shows people info
+ */
 namespace Gender
 {
     class Program
@@ -206,7 +210,7 @@ namespace Gender
             }
             public override string ToString()
             {
-                return ("wow i am a " + (IsMale ? "male" : "female") + " person of age " + Age + ". I identify as " + Name + ". I make $" + Income + " a year and am " + (IsBadAtCS ? "bad at Computer Science" : "not bad at Computer Science") + ". I have a salary of " + salary + " and my job position is" + position + ".");
+            return ("wow i am a " + (IsMale ? "male" : "female") + " person of age " + Age + ". I identify as " + Name + ". I make $" + Income + " a year and am " + (IsBadAtCS ? "bad at Computer Science" : "not bad at Computer Science") + ". I have a salary of " + salary + " and my job position is" + position + ".");
 
             }
         }
